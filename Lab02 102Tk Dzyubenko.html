@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background image with text alignment and images</title>
+    <style>
+      body {
+        background-image: url("https://i1.poltava.to/uploads/2022/07/28/nupptop.jpg");
+        background-size: cover;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+      }
+      .left,
+      .center,
+      .right {
+        color: white;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+      }
+      .left img,
+      .center img,
+      .right img {
+        margin-right: 10px;
+        max-width: 100px;
+      }
+      .left {
+        text-align: left;
+        flex: 1;
+      }
+      .center {
+        text-align: center;
+        flex: 1;
+      }
+      .right {
+        text-align: right;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img src="image1.jpg" alt="Image 1">
+        <p>Name left</p>
+      </div>
+      <div class="center">
+        <img src="image2.jpg" alt="Image 2">
+        <p>Name center</p>
+      </div>
+      <div class="right">
+        <img src="image3.jpg" alt="Image 3">
+        <p>Name right</p>
+      </div>
+    </div>
+  </body>
+</html>
